@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" createEmptyFolders="true" filePermissions="420" folderPermissions="493">
     <serverData>
       <paths name="shell metropolia">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/react-project" local="$PROJECT_DIR$/build" web="/react-project" />
           </mappings>
         </serverdata>
       </paths>
