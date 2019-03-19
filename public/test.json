@@ -5,7 +5,7 @@
     "thumbnails": {
       "w160": "http://placekitten.com/160/161"
     },
-    "src": "http://placekitten.com/160/161"
+    "filename": "http://placekitten.com/160/161"
   },
   {
     "title": "Title 2",
@@ -13,7 +13,7 @@
     "thumbnails": {
       "w160": "http://placekitten.com/160/162"
     },
-    "src": "http://placekitten.com/160/162"
+    "filename": "http://placekitten.com/160/162"
   },
   {
     "title": "Title 3",
@@ -21,6 +21,6 @@
     "thumbnails": {
       "w160": "http://placekitten.com/160/163"
     },
-    "src": "http://placekitten.com/160/163"
+    "filename": "http://placekitten.com/160/163"
   }
 ]

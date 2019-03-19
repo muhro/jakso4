@@ -7,10 +7,10 @@ import './App.css';
 class App extends Component {
   state = {
     kissat:[]
-  }
+  };
 
   componentDidMount(){
-    axios.get('./test.json')
+    axios.get('test.json')
         .then(res => this.setState({kissat: res.data}))
   }
 

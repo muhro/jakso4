@@ -51,7 +51,7 @@ export class KissaItem extends Component{
    <table style={this.tableStyle()}>
       <div style={this.divStyle()}>
         <td>
-             <img style={this.imgStyle()} src={this.props.kissa.src} alt={this.props.kissa.alt}/>
+             <img style={this.imgStyle()} src={this.props.kissa.filename} alt={this.props.kissa.alt}/>
         </td>
         <td style={this.text()}>
             <h3 style={this.h3Style()}>{this.props.kissa.title}</h3>
