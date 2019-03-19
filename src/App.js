@@ -10,8 +10,11 @@ class App extends Component {
   };
 
   componentDidMount(){
-    axios.get('test.json')
-        .then(res => this.setState({kissat: res.data}))
+    let url = 'http://media.mw.metropolia.fi/wbma/media/';
+    axios.get(url)
+       .then(res => this.setState({kissat: res.data}))
+     //  .then( res => console.log(res.data))
+
   }
 
   render() {

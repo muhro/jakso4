@@ -20,7 +20,7 @@ export class KissaItem extends Component{
   }
   imgStyle = () => {
     return{
-    maxHeight: '100%',
+    maxHeight: '6rem',
     paddingRight: '20px'
     }
   }
@@ -46,18 +46,19 @@ export class KissaItem extends Component{
   }
 
 
+
   render(){
+    let link = "http://media.mw.metropolia.fi/wbma/uploads/"
     return(
    <table style={this.tableStyle()}>
       <div style={this.divStyle()}>
         <td>
-             <img style={this.imgStyle()} src={this.props.kissa.filename} alt={this.props.kissa.alt}/>
+             <img style={this.imgStyle()} src={link + this.props.kissa.filename} alt={this.props.kissa.alt}/>
         </td>
         <td style={this.text()}>
             <h3 style={this.h3Style()}>{this.props.kissa.title}</h3>
-            <p style={this.pStyle()}>{this.props.kissa.description}</p>
+            <p style={this.pStyle()}>{'Lataajan ID: ' + this.props.kissa.user_id}</p>
         </td>
-          <a style={this.linkStyle()} href={this.props.kissa.view}>View</a>
      </div>
    </table>
     )
