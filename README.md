@@ -6,3 +6,6 @@ http://users.metropolia.fi/~lauriaus/build/
 
 HTTP-A
 http://users.metropolia.fi/~lauriaus/http-a/build/
+
+HTTP-B
+http://users.metropolia.fi/~lauriaus/http-b/build/

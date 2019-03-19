@@ -6,16 +6,27 @@ import './App.css';
 
 class App extends Component {
   state = {
-    kissat:[]
+    kissat:[],
   };
 
   componentDidMount(){
-    let url = 'http://media.mw.metropolia.fi/wbma/media/';
-    axios.get(url)
-       .then(res => this.setState({kissat: res.data}))
-     //  .then( res => console.log(res.data))
-
+    fetch( 'http://media.mw.metropolia.fi/wbma/media/').then((response) => {
+      return response.json();
+    }).then( (json) => {
+      //console.log(json);
+      json.map(item => {
+        return fetch('http://media.mw.metropolia.fi/wbma/media/' + item.file_id).then(response => {
+          return response.json();
+        }).then(items => {
+          console.log(items);
+          this.setState({
+            kissat: [...this.state.kissat, items]
+          })
+        });
+      });
+    });
   }
+
 
   render() {
     return (
