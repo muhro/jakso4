@@ -10,7 +10,6 @@ http://users.metropolia.fi/~lauriaus/http-a/build/
 HTTP-B
 http://users.metropolia.fi/~lauriaus/http-b/build/
 
-
-#Viikko 3
+# Viikko 3
 Login
 http://users.metropolia.fi/~lauriaus/login/
