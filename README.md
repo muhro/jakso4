@@ -12,4 +12,4 @@ http://users.metropolia.fi/~lauriaus/http-b/build/
 
 # Viikko 3
 Login
-http://users.metropolia.fi/~lauriaus/login/
+http://users.metropolia.fi/~lauriaus/ui/
